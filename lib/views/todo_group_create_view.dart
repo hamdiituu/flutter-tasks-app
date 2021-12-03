@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:get/get.dart';
 import 'package:todo_application/helpers/color_helper.dart';
 import 'package:todo_application/widgets/detail_select_widget.dart';
@@ -10,11 +11,15 @@ class TodoGroupCreateView extends StatelessWidget {
   Widget build(BuildContext context) {
     _size = MediaQuery.of(context).size;
     return Scaffold(
-      backgroundColor: HexColor.fromHex("#FAFAFA"),
+      backgroundColor: HexColor.fromHex("#fdfdfd"),
       appBar: AppBar(
+          systemOverlayStyle: SystemUiOverlayStyle(
+              statusBarColor: HexColor.fromHex("fdfdfd"),
+              statusBarIconBrightness: Brightness.dark),
           automaticallyImplyLeading: false,
           backgroundColor: Colors.transparent,
           elevation: 0.0,
+          centerTitle: true,
           title: Text(
             'Create New Group ',
             style:

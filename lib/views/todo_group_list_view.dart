@@ -29,7 +29,8 @@ class TodoGroupListView extends StatelessWidget {
     _size = MediaQuery.of(context).size;
     return Scaffold(
       appBar: AppBar(
-          systemOverlayStyle: const SystemUiOverlayStyle(
+          systemOverlayStyle: SystemUiOverlayStyle(
+              statusBarColor: HexColor.fromHex("fdfdfd"),
               statusBarIconBrightness: Brightness.dark),
           leading: const Icon(
             Icons.widgets,

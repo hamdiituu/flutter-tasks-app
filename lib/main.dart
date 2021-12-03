@@ -9,18 +9,13 @@ import 'package:todo_application/views/todo_group_create_view.dart';
 import 'package:todo_application/views/todo_group_list_view.dart';
 
 void main() => runApp(
-    DevicePreview(enabled: true, builder: (context) => const Application()));
+    DevicePreview(enabled: false, builder: (context) => const Application()));
 
 class Application extends StatelessWidget {
   const Application({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    SystemChrome.setSystemUIOverlayStyle(
-      SystemUiOverlayStyle(
-        statusBarIconBrightness: Brightness.dark,
-      ),
-    );
     return GetMaterialApp(
       locale: DevicePreview.locale(context),
       builder: DevicePreview.appBuilder,

@@ -13,8 +13,9 @@ class TodoDetailView extends StatelessWidget {
     return Scaffold(
       backgroundColor: HexColor.fromHex('#5886FF'),
       appBar: AppBar(
-        systemOverlayStyle: const SystemUiOverlayStyle(
-            statusBarIconBrightness: Brightness.dark),
+        systemOverlayStyle: SystemUiOverlayStyle(
+            statusBarColor: HexColor.fromHex('#5886FF'),
+            statusBarIconBrightness: Brightness.light),
         backgroundColor: Colors.transparent,
         elevation: 0.0,
         actions: <Widget>[
